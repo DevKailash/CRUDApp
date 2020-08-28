@@ -13,7 +13,7 @@ router.get('/', async(req, res, next)=> {
 
 /* post eployee data. */
 router.post('/', async(req, res, next)=>{
-  console.log(req.params);
+  console.log(req.body);
   const employee = schema({
     name: req.body.name,
     mobile:req.body.mobile,
